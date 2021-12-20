@@ -8,8 +8,7 @@
     "type-check": "tsc",
     "generate": "graphql-codegen",
     "generate:watch": "graphql-codegen --watch 'src/graphql/**/*.ts'",
-    "format": "prettier --write **/*.ts **/*.tsx",
-    "postinstall": "yarn generate"
+    "format": "prettier --write **/*.ts **/*.tsx"
   },
   "dependencies": {
     "apollo-server-micro": "^3.5.0",
