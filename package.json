@@ -6,7 +6,6 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint ./src/pages/* ./src/components/* ./src/api/* ./src/data/* ./src/graphql/* ./src/lib/* ./src/types/* -c .eslintrc.json --fix --ext ts,tsx",
     "generate": "graphql-codegen",
     "generate:watch": "graphql-codegen --watch 'src/graphql/**/*.ts'",
     "format": "prettier --write **/*.ts **/*.tsx",
