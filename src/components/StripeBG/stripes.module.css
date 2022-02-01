@@ -1,3 +1,7 @@
+.stripe {
+  border-radius: 6px;
+}
+
 .stripe:first-child {
   grid-row: -10;
   grid-column: span 4/6;

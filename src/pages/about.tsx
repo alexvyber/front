@@ -11,6 +11,7 @@ interface Props {
 }
 
 const AboutPage: FC<Props> = ({ about }) => {
+
   return (
     <Wrapper>
       <CenteredColumn>
