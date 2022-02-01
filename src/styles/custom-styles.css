@@ -1,6 +1,5 @@
 /* Write your own custom base styles here */
 
-
 html {
   @apply text-base dark:bg-gray-900;
 }
@@ -73,7 +72,6 @@ html {
   .tab-inactive {
     @apply text-gray-600 border-b-2 border-gray-50 dark:text-gray-400 dark:border-gray-1000 hover:text-gray-1000 dark:hover:text-gray-50 hover:border-gray-300 dark:hover:border-gray-700;
   } */
-  
 }
 
 /* Your own custom utilities */
@@ -147,7 +145,7 @@ html {
   .prose h4,
   .prose h5,
   .prose h6 {
-    @apply font-medium
+    @apply font-medium;
   }
   .prose strong,
   .prose b {
@@ -157,7 +155,6 @@ html {
   .prose pre {
     @apply text-indigo-500 bg-indigo-100 border border-indigo-200 dark:border-gray-700 dark:bg-gray-800;
   }
-
 
   /* this is needed to avoid HN comments from overflowing off the right edge of the screen */
   .prose p {
@@ -174,7 +171,7 @@ html {
   }
 
   .prose ol li {
-    @apply my-0
+    @apply my-0;
   }
 
   .token.comment,

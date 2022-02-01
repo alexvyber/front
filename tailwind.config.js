@@ -4,17 +4,16 @@ module.exports = {
   purge: ["./src/**/*.tsx"],
   darkMode: "media", // 'media' or 'class'
   theme: {
-      colors: {
+    colors: {
       yellow: colors.yellow,
       purple: colors.purple,
-      blue: colors.blue,      
+      blue: colors.blue,
       gray: colors.gray,
       red: colors.red,
       green: colors.green,
       pink: colors.pink,
       indigo: colors.indigo,
       white: "#fff",
-
     },
 
     extend: {
@@ -57,7 +56,5 @@ module.exports = {
       textColor: ["visited"],
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

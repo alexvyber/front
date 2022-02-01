@@ -119,7 +119,7 @@
 }
 
 .StripeGrid .backgroundContainer > .grid,
-.StripeGrid .stripeContainer > .grid{
+.StripeGrid .stripeContainer > .grid {
   height: 200%;
   -ms-flex-line-pack: end;
   align-content: end;
