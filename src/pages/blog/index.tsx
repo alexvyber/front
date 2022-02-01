@@ -5,6 +5,7 @@ import { getAllPosts } from "~/lib/api";
 import { GetStaticProps } from "next";
 import { FC } from "react";
 import { Post } from "~/graphql/types.generated";
+import { Wrapper } from "~/components/Wrapper";
 
 interface Props {
   posts: Array<Post>;
@@ -12,17 +13,19 @@ interface Props {
 
 const Blog: FC<Props> = ({ posts }) => {
   return (
-    <CenteredColumn>
-      <div className="flex flex-col space-y-8">
-        <div className=" md:px-4">
-          <PageHeader
-            title="Блог"
-            subtitle="Пишу о разработке по-философски...😆"
-          />
+    <Wrapper>
+      <CenteredColumn>
+        <div className="flex flex-col space-y-8">
+          <div className=" md:px-4">
+            <PageHeader
+              title="Блог"
+              subtitle="Пишу о разработке по-философски...😆"
+            />
+          </div>
+          {posts && <BlogList posts={posts} />}
         </div>
-        {posts && <BlogList posts={posts} />}
-      </div>
-    </CenteredColumn>
+      </CenteredColumn>
+    </Wrapper>
   );
 };
 

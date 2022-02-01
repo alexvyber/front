@@ -58,7 +58,6 @@
 }
 
 .background {
-
   grid-column: 1/-1;
   z-index: -1;
 }
@@ -75,7 +74,7 @@
 }
 
 .StripeGrid .backgroundContainer > .grid,
-.StripeGrid .stripeContainer > .grid{
+.StripeGrid .stripeContainer > .grid {
   height: 200%;
   -ms-flex-line-pack: end;
   align-content: end;

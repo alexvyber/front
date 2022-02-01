@@ -5,23 +5,25 @@ import { PostHeader } from "../../components/BlogPost/PostHeader";
 import Head from "next/head";
 import { MarkdownRenderer } from "../MarkdownRenderer";
 import { LinkBack } from "./LinkBack";
+import { Wrapper } from "~/components/Wrapper";
 
 export function BlogPost({ post }: { post: Post }) {
   return (
-    <React.Fragment>
+    <Wrapper>
       <CenteredColumn data-cy="overthought-post">
-        <Head>
-          <title>{post.title}</title>
-        </Head>
-        <PostHeader title={post.title} updatedAt={post.updatedAt} />
-        <div className="mt-8 prose md:prose-md mx-auto max-w-xl">
-          <MarkdownRenderer>{post.content}</MarkdownRenderer>
-          <div className="max-w-2xl mx-auto"></div>
-        </div>
-        <div className="mt-6">
-          <LinkBack />
+        <div className="mx-auto">
+          <Head>
+            <title>{post.title}</title>
+          </Head>
+          <PostHeader title={post.title} updatedAt={post.updatedAt} />
+          <div className="mt-8 prose md:prose-md ">
+            <MarkdownRenderer>{post.content}</MarkdownRenderer>
+          </div>
+          <div className="mt-6">
+            <LinkBack />
+          </div>
         </div>
       </CenteredColumn>
-    </React.Fragment>
+    </Wrapper>
   );
 }

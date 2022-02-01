@@ -4,6 +4,7 @@ import { Bookmark } from "~/graphql/types.generated";
 import { CenteredColumn } from "~/components/CenteredColumn";
 import { getAllBookmarks } from "~/lib/api";
 import { GetStaticProps } from "next";
+import { Wrapper } from "~/components/Wrapper";
 import { BookmarksList } from "~/components/BookmarksList";
 
 interface Props {
@@ -12,15 +13,17 @@ interface Props {
 
 export default function Bookmarks({ bookmarks }: Props) {
   return (
-    <CenteredColumn>
-      <div className="flex flex-col space-y-8">
-        <PageHeader
-          title="Закладки"
-          subtitle="Сохраняю здесь, чтобы легко найти потом! 😎 "
-        />
-        {bookmarks && <BookmarksList bookmarks={bookmarks} />}
-      </div>
-    </CenteredColumn>
+    <Wrapper>
+      <CenteredColumn>
+        <div className="flex flex-col space-y-8">
+          <PageHeader
+            title="Закладки"
+            subtitle="Сохраняю здесь, чтобы легко найти потом! 😎 "
+          />
+          {bookmarks && <BookmarksList bookmarks={bookmarks} />}
+        </div>
+      </CenteredColumn>
+    </Wrapper>
   );
 }
 

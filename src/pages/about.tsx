@@ -4,6 +4,7 @@ import { GetStaticProps } from "next";
 import { getAboutContent } from "~/lib/api";
 import { MarkdownRenderer } from "~/components/MarkdownRenderer";
 import { About } from "~/graphql/types.generated";
+import { Wrapper } from "~/components/Wrapper";
 
 interface Props {
   about: About;
@@ -11,13 +12,15 @@ interface Props {
 
 const AboutPage: FC<Props> = ({ about }) => {
   return (
-    <CenteredColumn>
-      <div className="flex flex-col space-y-12" data-cy="about-page">
-        <div className="prose">
-          <MarkdownRenderer>{about.content}</MarkdownRenderer>
+    <Wrapper>
+      <CenteredColumn>
+        <div className="flex flex-col space-y-12" data-cy="about-page">
+          <div className="prose">
+            <MarkdownRenderer>{about.content}</MarkdownRenderer>
+          </div>
         </div>
-      </div>
-    </CenteredColumn>
+      </CenteredColumn>
+    </Wrapper>
   );
 };
 

@@ -31,6 +31,12 @@ export const Links: Array<NavLink> = [
     title: "Закладки",
   },
   {
+    activeRoute: "Проекты",
+    activePath: "/projects",
+    href: "/projects",
+    title: "Проекты",
+  },
+  {
     activeRoute: "Блог",
     activePath: "/blog",
     href: "/blog",

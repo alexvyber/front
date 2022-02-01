@@ -5,6 +5,7 @@ import { Timeline } from "~/components/Timeline";
 import { getAllPosts } from "~/lib/api";
 import { Hero } from "../components/Hero";
 import { FC } from "react";
+import { Wrapper } from "~/components/Wrapper";
 
 interface Props {
   posts: Array<Post>;
@@ -12,12 +13,12 @@ interface Props {
 
 const Home: FC<Props> = ({ posts }) => {
   return (
-    <>
+    <Wrapper>
       <Hero />
       <CenteredColumn>
         <Timeline posts={posts} />
       </CenteredColumn>
-    </>
+    </Wrapper>
   );
 };
 
