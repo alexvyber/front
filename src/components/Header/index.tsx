@@ -14,7 +14,7 @@ import { Links } from "../Links";
 import { Hamburger } from "./Hamburger";
 
 export function Header() {
-  console.count('counter')
+  console.count("counter");
 
   const [isExpanded, setExpanded] = useState(false);
   const router = useRouter();
@@ -26,7 +26,7 @@ export function Header() {
     if (router.pathname == link.activePath) {
       activeRoute = link.activeRoute;
       activePath = link.activePath;
-    } 
+    }
   });
 
   const menuExpanded = () => {
@@ -57,17 +57,16 @@ export function Header() {
     );
   };
 
-
   return (
     <>
-      <MobileContainer expanded={isExpanded} >
+      <MobileContainer expanded={isExpanded}>
         <Background
           className="bg-white bg-opacity-60 dark:bg-gray-900"
           key="1"
         />
         {isExpanded ? menuExpanded() : menuClosed()}
       </MobileContainer>
-      <Container >
+      <Container>
         <InnerGrid>
           <NavLinks activeRoute={activeRoute} setExpanded={setExpanded} />
         </InnerGrid>
