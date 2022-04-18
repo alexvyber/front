@@ -24,18 +24,18 @@ export const Links: Array<NavLink> = [
   //   href: "/resume",
   //   title: "Резюме",
   // },
-  {
-    activeRoute: "Закладки",
-    activePath: "/bookmarks",
-    href: "/bookmarks",
-    title: "Закладки",
-  },
-  {
-    activeRoute: "Проекты",
-    activePath: "/projects",
-    href: "/projects",
-    title: "Проекты",
-  },
+  // {
+  //   activeRoute: "Закладки",
+  //   activePath: "/bookmarks",
+  //   href: "/bookmarks",
+  //   title: "Закладки",
+  // },
+  // {
+  //   activeRoute: "Проекты",
+  //   activePath: "/projects",
+  //   href: "/projects",
+  //   title: "Проекты",
+  // },
   {
     activeRoute: "Блог",
     activePath: "/blog",
