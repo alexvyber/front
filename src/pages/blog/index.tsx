@@ -19,7 +19,7 @@ const Blog: FC<Props> = ({ posts }) => {
           <div className=" md:px-4">
             <PageHeader
               title="Блог"
-              subtitle="Пишу о разработке по-философски...😆"
+              subtitle="Version 0.2.0 🖥️"
             />
           </div>
           {posts && <BlogList posts={posts} />}
