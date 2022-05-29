@@ -12,9 +12,9 @@ export function Hero() {
           <div className="pb-96 pt-16 text-center mx-auto flex flex-col space-y-8 md:items-center">
             <PageHeader
               title="🐙 Привет, я Алексей!"
-              subtitle="Go-разработчик из Санкт-Петербурга."
+              subtitle="Frontend-разработчик. Пишу на React и TypeScript."
             />
-{/*            <div className="flex flex-col space-y-2 md:space-x-4 md:flex-row md:space-y-0 md:items-center md:justify-center">
+            <div className="flex flex-col space-y-2 md:space-x-4 md:flex-row md:space-y-0 md:items-center md:justify-center">
               <Link href="/resume" passHref>
                 <a rel="noopener noreferrer">
                   <button className="w-full btn-primary btn text-lg btn-large font-normal rounded">
@@ -29,7 +29,7 @@ export function Hero() {
                   </button>
                 </a>
               </Link>
-            </div> */}
+            </div> 
           </div>
         </div>
       </CenteredColumn>
