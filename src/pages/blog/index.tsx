@@ -17,10 +17,7 @@ const Blog: FC<Props> = ({ posts }) => {
       <CenteredColumn>
         <div className="flex flex-col space-y-8">
           <div className=" md:px-4">
-            <PageHeader
-              title="Блог"
-              subtitle="Version 0.2.0 🖥️"
-            />
+            <PageHeader title="Блог" subtitle="Version 0.2.0 🖥️" />
           </div>
           {posts && <BlogList posts={posts} />}
         </div>

@@ -29,7 +29,7 @@ export function Hero() {
                   </button>
                 </a>
               </Link>
-            </div> 
+            </div>
           </div>
         </div>
       </CenteredColumn>
