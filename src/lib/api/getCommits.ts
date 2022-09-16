@@ -1,8 +1,6 @@
 import { fetchAPI } from "./index";
-const TOKEN = process.env.GH_TOKEN;
 
 // import fetch from 'node-fetch'
-import { Octokit, App } from "octokit";
 
 // const url ='https://api.github.com/';
 // const headers = {
